@@ -1,0 +1,50 @@
+
+digraph "code graph" {
+    graph [
+        //label="Code Graph",
+        fontname = "Avenir Next LT Pro",
+        fontsize = 18
+    ]
+    node [
+        shape = plaintext,
+        width = 1,
+        color = red,
+        style = filled,
+        fontcolor = white,
+        fontname = "DejaVu Sans Mono"
+    ]
+        	"u.r:uwr";
+	"uwr:ilc";
+	"ilc:vis";
+	"..r:ilc";
+	".wr:u.r";
+	"i.c:.wr";
+	"vis:u.r";
+	"il.:ilc";
+	"u.r:uwr"->"u.r:uwr";
+	".wr:u.r"->"u.r:uwr";
+	"i.c:.wr"->"u.r:uwr";
+	"vis:u.r"->"u.r:uwr";
+	"u.r:uwr"->"uwr:ilc";
+	".wr:u.r"->"uwr:ilc";
+	"i.c:.wr"->"uwr:ilc";
+	"vis:u.r"->"uwr:ilc";
+	"uwr:ilc"->"ilc:vis";
+	"..r:ilc"->"ilc:vis";
+	"il.:ilc"->"ilc:vis";
+	"u.r:uwr"->"..r:ilc";
+	".wr:u.r"->"..r:ilc";
+	"i.c:.wr"->"..r:ilc";
+	"vis:u.r"->"..r:ilc";
+	"u.r:uwr"->".wr:u.r";
+	".wr:u.r"->".wr:u.r";
+	"i.c:.wr"->".wr:u.r";
+	"vis:u.r"->".wr:u.r";
+	"uwr:ilc"->"i.c:.wr";
+	"..r:ilc"->"i.c:.wr";
+	"il.:ilc"->"i.c:.wr";
+	"ilc:vis"->"vis:u.r";
+	"uwr:ilc"->"il.:ilc";
+	"..r:ilc"->"il.:ilc";
+	"il.:ilc"->"il.:ilc";
+}
